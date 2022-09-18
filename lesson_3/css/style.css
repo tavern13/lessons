@@ -1,0 +1,52 @@
+/* * body section */
+a {
+	color: aquamarine;
+}
+h1,
+h2 {
+	color: seagreen;
+}
+h3 {
+	color: blue;
+}
+/* * point_1 section*/
+#paragraph {
+	color: greenyellow;
+}
+/*  * point_2 section */
+.little-container {
+	color: aqua;
+}
+/*  * point_3 section */
+p.text {
+	color: darkcyan;
+}
+/*  * point_4 section */
+.text.small {
+	color: blueviolet;
+}
+.text.small.yellow {
+	color: yellow;
+}
+/* * point_5 section */
+.block p {
+	color: teal;
+}
+.block p span {
+	color: brown;
+}
+.box * {
+	color: turquoise;
+}
+/* * point_6 section */
+.level-1st-of-investment > p {
+	color: lightgray;
+}
+/* * point_7 section */
+.first-title ~ p {
+	color: gold;
+}
+/* * point_8 section */
+.second-title + p {
+	color: goldenrod;
+}

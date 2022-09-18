@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>lesson 3</title>
+</head>
+
+<body>
+	<!-- ! header section -->
+	<header class="header">
+		<!-- * The main title section -->
+		<div>
+			<h1 id="up" title="Единственный и неповторимый на каждой странице">lesson 3</h1>
+			<img title="Милая картинка к 3-му уроку" src="img/img_1.png"
+				alt="картинка с градиентом переходящая с низу вверх от светло бирюзового цвета до зелоного цвета моря на левой половине белым цветом написано Урок 3, а на правой мы видим забавного робота небольших размеров авальной формы с небольшой антеной корпус которого зеленого цвета, а зона лица бирюзового цвета с глазами пытающимися посмотреть вам в душу">
+		</div>
+		<!-- * navigation section -->
+		<div>
+			<ul>
+				<li><a title="переход к 1-му пункту" href="#point_1">Обращение к селектору Id</a></li>
+				<li><a title="переход к 2-му пункту" href="#point_2">Обращение к селектору класса</a></li>
+				<li><a title="переход к 3-му пункту" href="#point_3">Комбинация селекторов тега и класса</a></li>
+				<li><a title="переход к 4-му пункту" href="#point_4">Обращение к тегу имеющему сразу 2 или более классов</a>
+				</li>
+				<li>
+					<a title="переход к 5-му пункту" href="#point_5">Обращение к тегу находящемуся внутри другого тега</a>
+					<ol>
+						<li><a title="переход к 1-му подпункту пункта 5-ть" href="#subpoint_5_1">Обращение к конкретному тегу
+								внутри другого тега</a></li>
+						<li><a title="переход к 2-му подпункту пункта 5-ть" href="#subpoint_5_2">Обращение ко всем тегам
+								внутри другого тега</a></li>
+					</ol>
+				</li>
+				<li><a title="переход к 6-му пункту" href="#point_6">Обращение к тегу 1-го уровня вложенности находящемуся
+						внутри другого тега</a></li>
+				<li><a title="переход к 7-му пункту" href="#point_7">Обращение к тегам дальше по коду после обьекта с
+						классом имеющие одинаковый уровень вложенности</a></li>
+				<li><a title="переход к 8-му пункту" href="#point_8">Обращение к тегу дальше по
+						коду после
+						обьекта с классом имеющий
+						одинаковый уровень вложенности</a></li>
+			</ul>
+		</div>
+	</header>
+	<!-- ! main section -->
+	<main class="main">
+		<!-- todo id poin 1 section -->
+		<div>
+			<h2 title="Заголовок 1-го пункта" id="point_1">Обращение к селектору <mark>Id</mark></h2>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, unde.
+			</p>
+			<p id="paragraph">
+				Lorem ipsum dolor sit amet consectetur adipisicing.
+			</p>
+			<p>
+				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem cupiditate impedit nisi maxime.
+			</p>
+		</div>
+		<!-- todo class point 2 section -->
+		<div>
+			<h2 title="заголовок 2-го пунка" id="point_2">Обращение к селектору <mark>класса</mark></h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet iure excepturi, ullam <span title="я span"
+					class="little-container">ipsam</span> pariatur impedit dolor. Ea consectetur facilis, rerum corrupti
+				molestias nihil
+				aliquam, facere sapiente delectus ducimus vitae ad?
+			</p>
+		</div>
+		<!-- todo tag + class poin 3 section  -->
+		<div>
+			<h2 title="заголовок 3-го пунка" id="point_3">Комбинация селекторов <mark>тега</mark> и <mark>класса</mark>
+			</h2>
+			<p class="text">
+				Lorem ipsum dolor sit amet consectetur adipisicing.
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem.
+			</p>
+			<p class="text">
+				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis, hic?
+			</p>
+		</div>
+		<!-- todo tag + two or more classes point 4 section -->
+		<div>
+			<h2 title="заголовок 4-го пункта" id="point_4">Обращение к <mark>тегу</mark> имеющему сразу 2 или более
+				<mark>классов</mark>
+			</h2>
+			<p class="text small">
+				Lorem ipsum dolor sit.
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit!
+			</p>
+			<p class="text small yellow">
+				Lorem ipsum dolor sit amet consectetur adipisicing.
+			</p>
+		</div>
+		<!-- todo 5 tag inside another tag section -->
+		<div>
+			<h2 title="заголовок 5-го пункта" id="point_5">Обращение к <mark>тегу</mark> находящемуся внутри другого
+				<mark>тега</mark>
+			</h2>
+		</div>
+		<div class="block">
+			<h3 title="1-й подзаголовок 5-го пункта" id="subpoint_5_1">Обращение к конкретному <mark>тегу</mark> внутри
+				другого <mark>тега</mark>
+			</h3>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, possimus.
+			</p>
+			<p>
+				Lorem, <span>ipsum</span> dolor.
+			</p>
+		</div>
+		<div class="box">
+			<h3 title="2-й подзаголовок 5-го пункта" id="subpoint_5_2">Обращение ко всем <mark>тегам</mark> внутри другого
+				<mark>тега</mark>
+			</h3>
+			<p>
+				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, dolores.
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet.
+			</p>
+		</div>
+		<!-- todo 6 tag 1st level of investment inside another tag section -->
+		<div class="level-1st-of-investment">
+			<h2 title="заголовок 6-го пункта" id="point_6">Обращение к <mark>тегу</mark> 1-го уровня вложенности
+				находящемуся внутри
+				другого <mark>тега</mark></h2>
+			<p>
+				Lorem, ipsum dolor.
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet.
+			</p>
+			<div>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing.
+				</p>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto!
+				</p>
+			</div>
+		</div>
+		<!-- todo 7 All tags further on the code after an object with the class have the same level of investment section -->
+		<div>
+			<h2 class="first-title" title="заголовок 7-го пункта" id="point_7">Обращение к <mark>тегам</mark> дальше по
+				коду после
+				<mark>обьекта</mark> с <mark>классом</mark> имеющие
+				одинаковый уровень вложенности
+			</h2>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, expedita!
+			</p>
+			<p>
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias amet illum asperiores dolorum enim cumque,
+				saepe obcaecati animi debitis voluptates adipisci ab, quasi qui vel vitae voluptatibus cupiditate. Quod,
+				magnam.
+			</p>
+			<div>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing.
+				</p>
+			</div>
+		</div>
+		<!-- todo 8 tag further on the code after an object with the class having the same level of investment section -->
+		<div>
+			<h2 class="second-title" title="заголовок 8-го пункта" id="point_8">Обращение к <mark>тегу</mark> дальше по
+				коду после
+				обьекта с <mark>классом</mark> имеющий
+				одинаковый уровень вложенности</h2>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum architecto vel officia, sint assumenda at,
+				laboriosam repellendus adipisci harum magni possimus odio libero id, voluptate voluptatem quod numquam!
+				Dignissimos, earum!
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro!
+			</p>
+		</div>
+	</main>
+	<!-- ! footer section -->
+	<footer class="foter">
+		<!-- todo exception section -->
+		<div>
+			<a href="#up">
+				<img title="вернутся к началу страницы" src="img/img_2.png"
+					alt="стрелка наверх с надписью up белого цвета внутри серого круга">
+			</a>
+		</div>
+	</footer>
+</body>
+
+</html>

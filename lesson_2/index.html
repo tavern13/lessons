@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<header>
+		<!-- ? Я комент, меня не видно в браузере, Привет менторам и тем кто любит заглядывать в код) -->
+		<!-- todo h1-h6 -->
+		<!-- * H1 может быть только 1-н на странице -->
+		<h1 class="h1" title="заголовок h1">Lesson 2</h1>
+		<h2>Lorem.</h2>
+		<h3>Lorem.</h3>
+		<h4><span title="тут спрятался спан">Lorem.</span></h4>
+		<h5>Lorem.</h5>
+		<h6><mark>Lorem.</mark></h6>
+		<!-- todo tittle -->
+		<div title="наследуется детьми">
+			<p>Lorem.</p>
+			<p>Lorem.</p>
+			<p>Lorem.</p>
+		</div>
+		<div title="родитель проигрывает ребенку">
+			<p>Lorem.</p>
+			<p>Lorem.</p>
+			<p title="ребенок побеждает">Lorem.</p>
+		</div>
+		<!-- todo ul&ol - li -->
+		<ul>
+			<li>Lorem, ipsum dolor.</li>
+			<li>Lorem, ipsum dolor.</li>
+			<li>Lorem, ipsum dolor.</li>
+		</ul>
+		<ol>
+			<li>Lorem, ipsum.</li>
+			<li>Lorem, ipsum.</li>
+			<li>Lorem, ipsum.</li>
+		</ol>
+		<ul>
+			<li>Lorem, ipsum dolor.</li>
+			<li>Lorem, ipsum dolor.
+				<ul>
+					<li>Lorem, ipsum.</li>
+				</ul>
+			</li>
+			<li>Lorem, ipsum dolor.</li>
+		</ul>
+		<ol>
+			<li>Lorem.</li>
+			<li>Lorem.</li>
+			<li>Lorem.
+				<ol>
+					<li>Lorem.</li>
+				</ol>
+			</li>
+		</ol>
+		<!-- * интересно, можно обьединять маркерованный список с нумерованным -->
+		<ul>
+			<li>Lorem, ipsum.</li>
+			<li>Lorem, ipsum.</li>
+			<li>Lorem.
+				<ol>
+					<li>lorem2</li>
+					<li>lorem2</li>
+				</ol>
+			</li>
+		</ul>
+		<ol>
+			<li>Lorem, ipsum dolor.</li>
+			<li>Lorem, ipsum dolor.
+				<ul>
+					<li>Lorem.</li>
+				</ul>
+			</li>
+		</ol>
+		<!-- * обьеденив два списка можно получить что интересное, например это -->
+		<ul>
+			<li>Я пункт</li>
+			<li>Я пункт
+				<ol>
+					<li>я подпункт</li>
+				</ol>
+			</li>
+			<li>Я пунк
+				<ol>
+					<li>я подпункт</li>
+					<li>я подпункт
+						<ul>
+							<li>я подпункт два ноль</li>
+						</ul>
+					</li>
+					<li>я подпункт</li>
+				</ol>
+			</li>
+			<li>Я пункт</li>
+		</ul>
+	</header>
+	<main>
+		<!-- todo p -->
+		<p title="я див">Я параграф</p>
+		<p>Я параграф</p>
+		<p>Я параграф</p>
+		<div>
+			<p>я парграф в теге <mark>div</mark></p>
+		</div>
+		<!-- ToDo Перенос строки тегом <Br> -->
+		<p>
+			Lorem ipsum, dolor <br title="обрыв"> sit amet <br> consectetur adipisicing.
+		</p>
+		<p>
+			текст текст текст <mark>текст в обрыв <br> тег mark</mark> текст текст
+		</p>
+		<!-- * ссылка -->
+		<!-- todo обычная ссылка -->
+
+		<a title="без таргета" href="https://rimworld.fandom.com/ru/wiki/RimWorld_%D0%B2%D0%B8%D0%BA%D0%B8">rimworld
+			wiki</a>
+
+		<!-- todo ссылка с атрибутом target -->
+
+		<a title="с таргетом" target="_blank"
+			href="https://rimworld.fandom.com/ru/wiki/RimWorld_%D0%B2%D0%B8%D0%BA%D0%B8">rimworld wiki</a>
+
+		<!-- todo ссылка + тег mark -->
+		<!-- * тег марк перезаписывает встроенные css свойства ссылки -->
+		<div>
+			<a title="с тегом марк"
+				href="https://rimworld.fandom.com/ru/wiki/RimWorld_%D0%B2%D0%B8%D0%BA%D0%B8"><mark>rimworld wiki</mark></a>
+		</div>
+		<!-- todo span + mark -->
+		<!-- * а вот тег span в отличие от тега mark без встроенных css свойст. Так что ничего интересно вы в браузере не увидите (^_^) джем урока по css-->
+		<p>
+			Lorem <span>ipsum</span> dolor sit amet consectetur adipisicing elit. <mark>Repudiandae ex nisi debitis
+			</mark>deserunt, laboriosam perspiciatis, nihil vitae praesentium fugit molestias <span>iusto!</span>
+			<mark>Provident sed</mark> voluptates quae inventore dolores, cum expedita autem?
+		</p>
+	</main>
+	<footer>
+		<!-- todo tag img -->
+		<img src="img/cat.jpg"
+			alt="кот породы скотиш-страут с прямыми ушами прекрасного серого цвета с зелеными глазами находиться в пустой темной комнате перед монитором ноутбука двумя передними лапками на тачпаде пристально наблюдая в монитор">
+		<img title="Я делаю эту домашку, вид со стороны" src="https://c.tenor.com/NZqiUoAnAFsAAAAC/cat-computer.gif"
+			alt="перед вами предстанет вид на небольшую часть кухни с мебелью из дерева, на краю стола лежит макбук перед стулом со спинкой на котором стоит на задних лапах милый кот черного цвета, а передними лапами кончики которых белые как перчатки смешно лупит по клавиатуре">
+		<!-- * специально указал неправильный путь. проверить, что будет в случае утраты фото  -->
+		<div>
+			<img src="img/cats.jpg"
+				alt="кот породы скотиш-страут с прямыми ушами прекрасного серого цвета с зелеными глазами находиться в пустой темной комнате перед монитором ноутбука двумя передними лапками на тачпаде пристально наблюдая в монитор">
+			<!-- * в альтернативный текст нельзя добавить спан или марк или br (проверил) -->
+			<img src="https://c.tenors.com/NZqiUoAnAFsAAAAC/cat-computer.gifs"
+				alt="перед вами предстанет вид на небольшую часть кухни с мебелью из дерева, на краю стола лежит макбук перед стулом со спинкой на котором стоит на задних лапах милый кот черного цвета, а передними лапами кончики которых белые как перчатки смешно лупит по клавиатуре">
+			<!-- * указал неправильны путь и не указал альтернативный текст, результат в браузере ничего не видно-->
+			<img src="img/cats.jpg" alt="">
+			<!-- * правильный путь но без альтернативного текста, картинку видно -->
+			<img src="img/cat.jpg" alt="">
+			<!-- * img + tittle-->
+			<img
+				title="кот породы скотиш-страут с прямыми ушами прекрасного серого цвета с зелеными глазами находиться в пустой темной комнате перед монитором ноутбука двумя передними лапками на тачпаде пристально наблюдая в монитор"
+				src="img/cat.jpg"
+				alt="кот породы скотиш-страут с прямыми ушами прекрасного серого цвета с зелеными глазами находиться в пустой темной комнате перед монитором ноутбука двумя передними лапками на тачпаде пристально наблюдая в монитор">
+		</div>
+		<!-- ? Если вам видно этот комент значит вы ментор или любопытный айтишник, неважно кто ты, спасибо , что просмотрел мой код) -->
+		<!-- todo посмотрим что валидатор скажет на некоторые эксперименты  -->
+	</footer>
+</body>
+
+</html>

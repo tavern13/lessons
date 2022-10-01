@@ -37,6 +37,7 @@ h2 {
 	font-size: 36px;
 	font-weight: 900;
 	line-height: 1.2;
+	padding-top: 15px;
 }
 h3 {
 	font-size: 26px;
@@ -50,7 +51,6 @@ h3 {
 }
 /* ? header */
 header {
-	padding-top: 20px;
 	margin-bottom: 20px;
 }
 header .main-title {

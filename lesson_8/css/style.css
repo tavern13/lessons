@@ -1,0 +1,468 @@
+/* ! null section */
+@import 'null.css';
+/* ? fonts at boart */
+@font-face {
+	font-family: 'Lato';
+	src: url('../fonts/Lato-Bold.woff2') format('woff2'), url('../fonts/Lato-Bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Lato';
+	src: url('../fonts/Lato-Black.woff2') format('woff2'), url('../fonts/Lato-Black.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Lato';
+	src: url('../fonts/Lato-Regular.woff2') format('woff2'), url('../fonts/Lato-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+/* ! body section */
+/* todo make main settings */
+body {
+	font-family: 'Lato', sans-serif;
+	color: rgb(66, 69, 81);
+	line-height: 1.6;
+}
+/* todo container */
+[class*='-container'] {
+	max-width: 1230px;
+	margin: 0 auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: hsl(227, 19%, 15%);
+}
+h2:target,
+h3:target {
+	display: inline-block;
+	text-shadow: 3px 3px 5px rgba(30, 33, 44, 0.7);
+}
+h1,
+h2,
+h3 {
+	font-weight: 900;
+}
+h2 {
+	font-size: 56px;
+	line-height: 1.2;
+}
+h3 {
+	font-size: 46px;
+	line-height: 1.3;
+}
+h4 {
+	font-size: 28px;
+}
+h4,
+h5,
+h6 {
+	font-weight: 700;
+	line-height: 1.5;
+}	
+/* ! header section */
+header {
+	padding-top: 15px;
+	margin-bottom: 20px;
+}
+/* ? roof-title section */
+/* todo title */
+h1 {
+	font-size: 66px;
+	line-height: 1.1;
+}
+h1:not(:last-child) {
+	margin-bottom: 10px;
+}
+.roof-title:not(:last-child) {
+	margin-bottom: 35px;
+}
+/* todo img */
+.roof-title-img:not(:last-child) {
+	margin-bottom: 20px;
+}
+.roof-title-img {
+	text-align: center;
+}
+.roof-title-img img {
+	max-width: 100%;
+}
+/* ? roof-navigation section */
+/* todo nav */
+.roof-navigation-list::before {
+	content: 'list:';
+	font-size: 20px;
+	color: rgb(120, 122, 128);
+	display: block;
+	text-transform: uppercase;
+	padding-left: 10px;
+	font-weight: 700;
+	line-height: 1.5;
+}
+.roof-navigation-list:not(:last-child) {
+	margin-bottom: 15px;
+}
+.roof-navigation-list ol:first-child {
+	border: 3px solid rgb(66, 69, 81);
+	border-radius: 10px;
+	display: inline-block;
+	padding: 10px;
+}
+.roof-navigation-list ol li ol li{
+	padding-left: 15px;
+}
+.roof-navigation-list ol li a:focus{
+	outline: none;
+}
+.roof-navigation-list ol li a:hover,
+.roof-navigation-list ol li a:focus {
+	color: rgba(66, 69, 81, 0.7);
+}
+.roof-navigation-list ol:not(:first-child) {
+	display: none;
+}
+.roof-navigation-list ol li a:focus + ol {
+	display: block;
+}
+.roof-navigation-list ol li:hover > ol {
+	display: block;
+}
+.roof-navigation-list ol li:not(:last-child) {
+	margin-bottom: 10px;
+}
+.roof-navigation-list ol li ol li:first-child {
+	padding-top: 7px;
+}
+ol{
+	counter-reset: item;
+}
+ol li::before {
+	counter-increment: item;
+	content: counter(item) ')';
+	display: inline-block;
+	margin-right: 3px;
+	color: rgba(30, 33, 44, 0.5);
+}
+/* ! main section */
+main {
+	margin-bottom: 20px;
+}
+/* ? homework section */
+.homework:not(:last-child) {
+	margin-bottom: 17px;
+}
+/* todo title */
+h2:not(:last-child) {
+	margin-bottom: 12px;
+}
+/* todo img */
+.homework-img:not(:last-child) {
+	margin-bottom: 17px;
+}
+.homework-img {
+	text-align: center;
+}
+.homework-img img {
+	max-width: 100%;
+}
+/* ? homework sub-1 section */
+.pseudo-classes:not(:last-child) {
+	margin-bottom: 19px;
+}
+/* todo title */
+.pseudo-classes .pseudo-classes-container h3:not(:last-child) {
+	margin-bottom: 14px;
+}
+/* todo box1 */
+.pseudo-classes-box1:not(:last-child) {
+	margin-bottom: 18px;
+}
+.pseudo-classes-box1 {
+	text-align: center;
+}
+.button-1,
+.button-2 {
+	text-align: center;
+	display: inline-block;
+	font-size: 20px;
+	line-height: 1.5;
+	font-weight: 700;
+	text-transform: capitalize;
+	padding: 10px 15px;
+	border-radius: 20px;
+	box-shadow: 0 4px 0 rgba(120, 122, 128, 0.75);
+	color: rgb(120, 122, 128);
+	background-color: rgba(120, 122, 128, 0.3);
+}
+.button-1:not(:last-child),
+.button-2:not(:last-child) {
+margin-right: 45px;
+}
+.button-1:hover,
+.button-2:hover {
+	color: rgba(120, 122, 128, 0.7);
+	box-shadow: 0 1px 0 rgba(120, 122, 128, 0.75);
+}
+.button-1:focus,
+.button-2:focus {
+	outline: none;
+	color: rgba(120, 122, 128, 0.7);
+	box-shadow: 0 1px 0 rgba(120, 122, 128, 0.75);
+}
+.button-1:visited,
+.button-2:visited {
+	color: rgb(255, 255, 255);
+}
+.button-1:active,
+.button-2:active {
+	color: rgb(30, 33, 44);
+}
+/* todo box2 */
+.pseudo-classes-box2:not(:last-child) {
+	margin-bottom: 16px;
+}
+.pseudo-classes-box2 *:not(:last-child) {
+	margin-bottom: 10px;
+}
+.pseudo-classes-box2 p:nth-child(odd) {
+	background-color: rgba(66, 69, 81, 0.1);
+}
+.pseudo-classes-box2 p:nth-child(even) {
+	background-color: rgba(66, 69, 81, 0.3);
+}
+.pseudo-classes-box2 p span:first-of-type {
+	color: rgb(255, 255, 255);
+}
+.pseudo-classes-box2 p mark:first-child {
+	color: rgb(255, 255, 255);
+	background-color: rgba(66, 69, 81, 0.3);
+}
+/* ? homework sub-2 section */
+.pseudo-elements:not(:last-child) {
+	margin-bottom: 20px;
+}
+/* todo title */
+.pseudo-elements .pseudo-elements-container h3:not(:last-child) {
+	margin-bottom: 13px;
+}
+/* todo box1 */
+.pseudo-elements-box1:not(:last-child) {
+	margin-bottom: 19px;
+}
+.pseudo-elements-box1 *:not(:last-child) {
+	margin-bottom: 10px;
+}
+.pseudo-elements-box1::before {
+	content: 'Наведи курсором мыши на параграф';
+	opacity: 0.3;
+}
+.pseudo-elements-box1::after {
+	content: '^_^';
+	opacity: 0.7;
+}
+.pseudo-elements-box1 p:hover::before,
+.pseudo-elements-box1 p:hover::after {
+	content: '';
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url('../img/icons/checked.png');
+}
+/* todo box2 */
+.pseudo-elements-box2:not(:last-child) {
+	margin-bottom: 17px;
+}
+.pseudo-elements-box2 *:not(:last-child) {
+	margin-bottom: 11px;
+}
+.pseudo-elements-box2 span::before {
+	content: '*';
+	color: rgba(30, 33, 44, 0.4);
+}
+.pseudo-elements-box2 span::after {
+	content: '*';
+	color: rgba(30, 33, 44, 0.4);
+}
+.pseudo-elements-box2 p span:hover::before,
+.pseudo-elements-box2 p span:hover::after {
+	content: '';
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url('../img/icons/checked.png');
+}
+.pseudo-elements-box2::before {
+	content: 'Наведи курсором мыши на *dolor*';
+	opacity: 0.3;
+}
+.pseudo-elements-box2::after {
+	content: '^_^';
+	opacity: 0.7;
+}
+/* ? figma section */
+.figma:not(:last-child) {
+	margin-bottom: 20px;
+}
+/* todo title */
+.figma .figma-container h2:not(:last-child) {
+	margin-bottom: 17px;
+}
+/* todo box1 */
+.figma-box1:not(:last-child) {
+	margin-bottom: 200px;
+}
+.figma-box1 h3:not(:last-child) {
+	margin-bottom: 40px;
+}
+.figma-box1 .figma-box1-text:not(:last-child) {
+	margin-bottom: 48px;
+}
+.figma-box1 .figma-box1-text *:not(:last-child) {
+	margin-bottom: 5px;
+}
+.figma-box1 h4:not(:last-child) {
+	margin-bottom: 24px;
+}
+.figma-box1 ul li:not(:last-child) {
+	margin-bottom: 4px;
+}
+.figma-box1 li {
+	padding-left: 32px;
+	background: url('../img/icons/check.png') 0 6px no-repeat ;
+}
+/* todo box2 */
+.figma-box2:not(:last-child) {
+	margin-bottom: 200px;
+}
+.figma-box2 h6:not(:last-child) {
+	margin-bottom: 8px;
+}
+.figma-box2 h3:not(:last-child) {
+	margin-bottom: 16px;
+}
+.figma-box2 .figma-box2-profession:not(:last-child) {
+	margin-bottom: 32px;
+}
+.figma-box2 .figma-box2-profession {
+	color: rgb(120, 122, 128);
+	font-size: 20px;
+	line-height: 1.5;
+}
+.figma-box2 .figma-box2-profession *:not(:last-child) {
+	margin-bottom: 5px;
+}
+.figma-box2 .figma-box2-list:not(:last-child) {
+	margin-bottom: 32px;
+}
+.figma-box2 .figma-box2-list ul li:not(:last-child) {
+	margin-bottom: 4px;
+}
+.figma-box2 .figma-box2-list ul li:nth-child(1) {
+	padding-left: 24px;
+	background: url('../img/icons/star.png') 0 center no-repeat;
+}
+.figma-box2 .figma-box2-list ul li:nth-child(2) {
+	padding-left: 24px;
+	background: url('../img/icons/play.png') 0 center no-repeat;
+}
+.figma-box2 .figma-box2-list ul li:nth-child(3) {
+	padding-left: 24px;
+	background: url('../img/icons/human.png') 0 center no-repeat ;
+}
+.figma-box2 .figma-box2-text:not(:last-child) {
+	margin-bottom: 32px;
+}
+.figma-box2 .figma-box2-text *:not(:last-child) {
+	margin-bottom: 10px;
+}
+/* ? game section */
+.game:not(:last-child) {
+	margin-bottom: 21px;
+}
+.game h2:not(:last-child) {
+	margin-bottom: 15px;
+}
+.game .game-mainbox:not(:last-child) {
+	margin-bottom: 19px;
+}
+/* todo game */
+.game-mainbox {
+	width: 1200px;
+	height: 700px;
+	background: url('../img/background.jpg') no-repeat center / cover;
+}
+.game-mainbox .box1 {
+	background:url('../img/mage.png') no-repeat 270px bottom / 35px, url('../img/forest_1.jpg') no-repeat center / cover;
+	width: 350px;
+	height: 150px;
+}
+.game-mainbox .box2 {
+	background: url('../img/forest_2.jpg') no-repeat 0 0 / cover;
+	width: 75px;
+	height: 200px;
+	margin-left: 250px;
+}
+.game-mainbox .box3 {
+	background: url('../img/forest_3.jpg') no-repeat center / cover;
+	height: 75px;
+	width: 750px;
+	margin-left: 250px;
+}
+.game-mainbox .box4 {
+	background: url('../img/forest_4.jpg') no-repeat center / cover;
+	height: 120px;
+	width: 70px;
+	margin-left: 930px;
+}
+.game-mainbox .box5 {
+	background: url('../img/house.jpg') no-repeat center / cover;
+	height: 135px;
+	width: 300px;
+	margin-left: 870px;
+}
+.game-mainbox .box2,
+.game-mainbox .box3,
+.game-mainbox .box4,
+.game-mainbox .box5 {
+	visibility: hidden;
+}
+.box1:hover + .box2,
+.box2:hover {
+	visibility: visible;
+}
+.box2:hover + .box3,
+.box3:hover {
+	visibility: visible;
+}
+.box3:hover + .box4,
+.box4:hover {
+	visibility: visible;
+}
+.box4:hover + .box5,
+.box5:hover {
+	visibility: visible;
+}
+/* ! footer section */
+footer {
+	padding-bottom: 20px;
+}
+/* ? basement section */
+/* todo img up button */
+.basement-img:not(:last-child) {
+	margin-bottom: 19px;
+}
+.basement-img {
+	text-align: center;
+}
+.basement-img img {
+	max-width: 100%;
+}

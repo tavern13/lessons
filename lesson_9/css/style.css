@@ -41,7 +41,7 @@ body {
 .main-point-5-img img,
 .main-point-6-img img,
 .footer-box-1-img img {
-	min-width: 100%;
+	max-width: 100%;
 }
 h1,
 h2 {
